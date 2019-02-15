@@ -44,7 +44,7 @@ if __name__ == "__main__":
 
     for infn in open(args.data_list):
         infn = infn.rstrip()
-        cmd = '/usr/bin/time {opt} {exe} {infn}'.format(
+        cmd = '/usr/bin/time {opt} {exe} -algorithm=4 {infn}'.format(
             opt=time_opt, exe=exe_cmd, infn=infn)
         futures.append(executor.submit(run_command, cmd, infn))
 
