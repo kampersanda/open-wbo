@@ -8,6 +8,11 @@ from argparse import ArgumentParser
 import platform
 import pathlib
 
+'''
+ls -1 /mnt/server/kamp/Canterbury_buf/wcnfs_test/* > datalists/datalist.txt
+python3.6 scripts/run_wbo.py -e open-wbo_release -d datalists/datalist.txt -w 1
+'''
+
 
 def run_command(cmd, infn):
     print(cmd)
